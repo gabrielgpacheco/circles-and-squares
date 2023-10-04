@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gabriel Gallindo Pacheco 04 October 2023</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <!-- Bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+        /* Basic style */
+        body {
+            font-family: 'Open Sans';
+            background-color: black;
+            height: 100vh;
+            color: white;
+            width: 100vw;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row,
+        .col {
+            --bs-gutter-x: 0;
+            max-height: 500px;
+        }
+
+        /* Custom style for requirements */
+
+        i {
+            font-size: 150px;
+        }
+
+        .icon.red {
+            color: red;
+            transition: all 2s;
+        }
+
+        .icon.green {
+            color: green;
+        }
+
+        .icon.blue {
+            color: blue;
+        }
+
+        .icon.orange {
+            color: orange;
+        }
+
+        .icon.yellow {
+            color: yellow;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover p {
+            width: auto;
+            overflow: visible;
+            padding-left: 8%;
+        }
+
+        a p {
+            text-decoration: none;
+            color: white;
+            cursor: default;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 0;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .half-opacity {
+            opacity: 50%;
+        }
+
+        #square-red,
+        #square-green,
+        #square-blue,
+        #square-orange,
+        #square-yellow {
+            display: none;
+        }
+
+        /* For mobile devices */
+        @media (max-width: 768px) {
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            a p {
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="wrapper">
+        <div class="text-center">
+            <h1>
+                Gabriel Gallindo Pacheco - 04/10/2023
+            </h1>
+        </div>
+        <container class="container-fluid" id="circle">
+            <div class="row">
+                <div class="col text-center mx-2">
+                    <a href="#" aria-label="icon to represent the form">
+                        <i class="icon red bi bi-circle" id="circle-red"></i>
+                        <div class="title">
+                            <p class="mt-1 mb-5">
+                                red
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col text-center mx-2">
+                    <div class="title">
+                        <a href="#" aria-label="icon to represent the form">
+                            <i class="icon green bi bi-circle" id="circle-green"></i>
+                            <p class="mt-1 mb-5">
+                                green
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col text-center mx-2">
+                    <div class="title">
+                        <a href="#" aria-label="icon to represent the form">
+                            <i class="icon blue bi bi-circle" id="circle-blue"></i>
+                            <p class="mt-1 mb-5">
+                                blue
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col text-center mx-2">
+                    <div class="title">
+                        <a href="#" aria-label="icon to represent the form">
+                            <i class="icon orange bi bi-circle" id="circle-orange"></i>
+                            <p class="mt-1 mb-5">
+                                orange
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col text-center mx-2">
+                    <div class="title">
+                        <a href="#" aria-label="icon to represent the form">
+                            <i class="icon yellow bi bi-circle" id="circle-yellow"></i>
+                            <p class="mt-1 mb-5">
+                                yellow
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </container>
+        <div style="width: 100%; border:2px solid red"></div>
+        <container class="container-fluid" id="square">
+            <div class="row">
+                <div class="col text-center mx-2">
+                    <a href="#" aria-label="icon to represent the form">
+                        <i class="icon red bi bi-circle" id="square-red"></i>
+                        <div class="">
+                            <p class="mt-1 mb-5">
+                                red
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col text-center mx-2">
+                    <div class="">
+                        <a href="#" aria-label="icon to represent the form">
+                            <i class="icon green bi bi-circle" id="square-green"></i>
+                            <p class="mt-1 mb-5">
+                                green
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col text-center mx-2">
+                    <div class="">
+                        <a href="#" aria-label="icon to represent the form">
+                            <i class="icon blue bi bi-circle" id="square-blue"></i>
+                            <p class="mt-1 mb-5">
+                                blue
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col text-center mx-2">
+                    <div class="">
+                        <a href="#" aria-label="icon to represent the form">
+                            <i class="icon orange bi bi-circle" id="square-orange"></i>
+                            <p class="mt-1 mb-5">
+                                orange
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col text-center mx-2">
+                    <div class="">
+                        <a href="#" aria-label="icon to represent the form">
+                            <i class="icon yellow bi bi-circle" id="square-yellow"></i>
+                            <p class="mt-1 mb-5">
+                                yellow
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </container>
+
+        <div>
+            Made with Bootstrap and Jquery-3
+        </div>
+
+    </main>
+
+    <!-- Bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".icon").hover(function (e) {
+                // mouseover event                
+                let selected_color = e.target.attributes.id.value;
+                if (selected_color == "circle-red") {
+                    $("#circle-green, #circle-blue, #circle-orange, #circle-yellow").addClass("half-opacity")
+                }
+                if (selected_color == "circle-green") {
+                    $("#circle-red, #circle-blue, #circle-orange, #circle-yellow").addClass("half-opacity")
+                }
+                if (selected_color == "circle-blue") {
+                    $("#circle-green, #circle-red, #circle-orange, #circle-yellow").addClass("half-opacity")
+                }
+                if (selected_color == "circle-orange") {
+                    $("#circle-green, #circle-blue, #circle-red, #circle-yellow").addClass("half-opacity")
+                }
+                if (selected_color == "circle-yellow") {
+                    $("#circle-green, #circle-blue, #circle-red, #circle-orange").addClass("half-opacity")
+                }
+                if (selected_color == "square-red") {
+                    $("#square-green, #square-blue, #square-orange, #square-yellow").addClass("half-opacity")
+                }
+                if (selected_color == "square-green") {
+                    $("#square-red, #square-blue, #square-orange, #square-yellow").addClass("half-opacity")
+                }
+                if (selected_color == "square-blue") {
+                    $("#square-green, #square-red, #square-orange, #square-yellow").addClass("half-opacity")
+                }
+                if (selected_color == "square-orange") {
+                    $("#square-green, #square-blue, #square-red, #square-yellow").addClass("half-opacity")
+                }
+                if (selected_color == "square-yellow") {
+                    $("#square-green, #square-blue, #square-red, #square-orange").addClass("half-opacity")
+                }
+
+            }, function (e) {
+                // mouseout event
+                let selected_color = e.target.attributes.id.value;
+                if (selected_color == "circle-red") {
+                    $("#circle-green, #circle-blue, #circle-orange, #circle-yellow").removeClass("half-opacity")
+                }
+                if (selected_color == "circle-green") {
+                    $("#circle-red, #circle-blue, #circle-orange, #circle-yellow").removeClass("half-opacity")
+                }
+                if (selected_color == "circle-blue") {
+                    $("#circle-green, #circle-red, #circle-orange, #circle-yellow").removeClass("half-opacity")
+                }
+                if (selected_color == "circle-orange") {
+                    $("#circle-green, #circle-blue, #circle-red, #circle-yellow").removeClass("half-opacity")
+                }
+                if (selected_color == "circle-yellow") {
+                    $("#circle-green, #circle-blue, #circle-orange, #circle-red").removeClass("half-opacity")
+                }
+                if (selected_color == "square-red") {
+                    $("#square-green, #square-blue, #square-orange, #square-yellow").removeClass("half-opacity")
+                }
+                if (selected_color == "square-green") {
+                    $("#square-red, #square-blue, #square-orange, #square-yellow").removeClass("half-opacity")
+                }
+                if (selected_color == "square-blue") {
+                    $("#square-green, #square-red, #square-orange, #square-yellow").removeClass("half-opacity")
+                }
+                if (selected_color == "square-orange") {
+                    $("#square-green, #square-blue, #square-red, #square-yellow").removeClass("half-opacity")
+                }
+                if (selected_color == "square-yellow") {
+                    $("#square-green, #square-blue, #square-orange, #square-red").removeClass("half-opacity")
+                }
+
+            });
+
+            $(".icon").on("click", function (e) {
+                e.preventDefault();
+                // get the color clicked
+                let clicked_color = e.target.attributes.id.value.split('-')[1]
+
+                // Once the icon is clicked it should appear in a row below the original row and become a square. 
+                if (e.target.attributes.id.value == 'circle-' + clicked_color) {
+                    $('#circle-' + clicked_color).hide();
+                    $('#square-' + clicked_color).show();
+
+                    setTimeout(() => {
+                        $('#square-' + clicked_color).toggleClass('bi-square');
+                        $('#square-' + clicked_color).toggleClass('bi-circle');
+
+                        $('#circle-' + clicked_color).toggleClass('bi-circle');
+                        $('#circle-' + clicked_color).toggleClass('bi-square');
+                    }, 500);
+                }
+
+                //When a square is clicked, the square should become a circle and be placed first in the circle row.
+                if (e.target.attributes.id.value == 'square-' + clicked_color) {
+                    $('#square-' + clicked_color).hide();
+                    $('#circle-' + clicked_color).show();
+
+                    setTimeout(() => {
+                        $('#circle-' + clicked_color).toggleClass('bi-square');
+                        $('#circle-' + clicked_color).toggleClass('bi-circle');
+                    }, 500);
+                }
+
+            })
+        });
+    </script>
+</body>
+
+</html>

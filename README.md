@@ -1,2 +1,5 @@
 # circles-and-squares
-A fornt-end test made with Bootstrap and Jquery
+A front-end test made with Bootstrap and Jquery
+
+# Instructions
+Download de circles-and-squares.html file and open in a web browser.
